@@ -179,6 +179,7 @@ public class VideoController {
 			userVideoList.put(video, userVid);
 		}
 		
+		model.addAttribute("lecture", lecture);
 		model.addAttribute("userVideoList", userVideoList);
 		return "mypage/my_lec_videos";
 	}
